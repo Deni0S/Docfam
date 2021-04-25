@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authorization View Controller-->
+        <scene sceneID="wFo-hc-Jtc">
+            <objects>
+                <viewController storyboardIdentifier="AuthorizationViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="o0B-pP-BAp" customClass="AuthorizationViewController" customModule="Docfam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sgh-YF-ur6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-yY-s1D">
+                                <rect key="frame" x="0.0" y="44" width="414" height="621"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-Hw-hn8">
+                                        <rect key="frame" x="0.0" y="228" width="414" height="165.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji.folder.grey" translatesAutoresizingMaskIntoConstraints="NO" id="n68-LJ-NAj">
+                                                <rect key="frame" x="179" y="0.0" width="56" height="56"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family.doc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX3-Fo-nYz">
+                                                <rect key="frame" x="123" y="72" width="168" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <color key="textColor" name="Title"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приложение для быстрого доступа  к документам и их обмену" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXV-7u-n8X">
+                                                <rect key="frame" x="84.5" y="132" width="245.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="Subtitle"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="GXV-7u-n8X" secondAttribute="bottom" id="9PE-TD-iMV"/>
+                                            <constraint firstItem="n68-LJ-NAj" firstAttribute="centerX" secondItem="6Jx-Hw-hn8" secondAttribute="centerX" id="Gsn-PI-PQx"/>
+                                            <constraint firstItem="tX3-Fo-nYz" firstAttribute="top" secondItem="n68-LJ-NAj" secondAttribute="bottom" constant="16" id="Mrt-5K-HIM"/>
+                                            <constraint firstItem="tX3-Fo-nYz" firstAttribute="centerX" secondItem="6Jx-Hw-hn8" secondAttribute="centerX" id="WRH-aq-wFV"/>
+                                            <constraint firstItem="n68-LJ-NAj" firstAttribute="top" secondItem="6Jx-Hw-hn8" secondAttribute="top" id="cLx-Pb-Tnv"/>
+                                            <constraint firstItem="GXV-7u-n8X" firstAttribute="top" secondItem="tX3-Fo-nYz" secondAttribute="bottom" constant="19" id="dmc-3C-DhO"/>
+                                            <constraint firstItem="GXV-7u-n8X" firstAttribute="centerX" secondItem="6Jx-Hw-hn8" secondAttribute="centerX" id="xHA-IE-fO5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6Jx-Hw-hn8" secondAttribute="trailing" id="1NL-5p-6DC"/>
+                                    <constraint firstItem="6Jx-Hw-hn8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OOS-yY-s1D" secondAttribute="top" constant="16" id="3vd-f8-DtD"/>
+                                    <constraint firstItem="6Jx-Hw-hn8" firstAttribute="leading" secondItem="OOS-yY-s1D" secondAttribute="leading" id="4cm-g5-832"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Jx-Hw-hn8" secondAttribute="bottom" constant="16" id="5Eg-xL-wbo"/>
+                                    <constraint firstItem="6Jx-Hw-hn8" firstAttribute="centerY" secondItem="OOS-yY-s1D" secondAttribute="centerY" id="MuY-dg-I2m"/>
+                                    <constraint firstItem="6Jx-Hw-hn8" firstAttribute="centerX" secondItem="OOS-yY-s1D" secondAttribute="centerX" id="SUX-Ug-4ry"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onn-77-7ZP" customClass="CustomView" customModule="Docfam" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="665" width="414" height="271"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход и регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-A7-9aZ">
+                                        <rect key="frame" x="90" y="23" width="234" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" name="Title"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hq0-g2-d11" customClass="CustomButton" customModule="Docfam" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="76" width="382" height="52"/>
+                                        <color key="backgroundColor" red="0.86465376620000001" green="0.043217666449999997" blue="0.23892688749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="xwe-Mz-5Dh"/>
+                                        </constraints>
+                                        <state key="normal" title="Продолжить с Apple" image="apple.button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  Продолжить с Apple">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.97632819410000005" green="0.97631114720000001" blue="0.98859804870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="17" name="SFProText-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCY-w6-URB">
+                                        <rect key="frame" x="56.5" y="157" width="301.5" height="23.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Пользуясь приложением вы соглашаетесь с Условиями использования и Политикой конфиденциальности">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.045293703679999998" green="0.50908708570000005" blue="0.98271256689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="10" name="SFProText-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Secondary Background"/>
+                                <constraints>
+                                    <constraint firstItem="GbN-A7-9aZ" firstAttribute="centerX" secondItem="onn-77-7ZP" secondAttribute="centerX" id="DDn-EZ-aoR"/>
+                                    <constraint firstAttribute="height" constant="271" id="JKA-sT-zcY"/>
+                                    <constraint firstAttribute="trailing" secondItem="hq0-g2-d11" secondAttribute="trailing" constant="16" id="MAK-JV-oqz"/>
+                                    <constraint firstItem="hq0-g2-d11" firstAttribute="top" secondItem="GbN-A7-9aZ" secondAttribute="bottom" constant="24" id="RLv-Fo-FzG"/>
+                                    <constraint firstItem="hq0-g2-d11" firstAttribute="leading" secondItem="onn-77-7ZP" secondAttribute="leading" constant="16" id="c25-1I-6Cc"/>
+                                    <constraint firstItem="MCY-w6-URB" firstAttribute="top" secondItem="hq0-g2-d11" secondAttribute="bottom" constant="29" id="iD6-oj-xmu"/>
+                                    <constraint firstItem="MCY-w6-URB" firstAttribute="centerX" secondItem="onn-77-7ZP" secondAttribute="centerX" id="lvy-He-iVy"/>
+                                    <constraint firstItem="GbN-A7-9aZ" firstAttribute="top" secondItem="onn-77-7ZP" secondAttribute="top" constant="23" id="uAX-UR-HVp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gxO-7Q-thw"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="gxO-7Q-thw" firstAttribute="trailing" secondItem="onn-77-7ZP" secondAttribute="trailing" id="3jf-dk-eGe"/>
+                            <constraint firstItem="onn-77-7ZP" firstAttribute="top" secondItem="OOS-yY-s1D" secondAttribute="bottom" id="8zY-Mb-Giw"/>
+                            <constraint firstItem="onn-77-7ZP" firstAttribute="leading" secondItem="gxO-7Q-thw" secondAttribute="leading" id="Npi-Wa-gY3"/>
+                            <constraint firstAttribute="bottom" secondItem="onn-77-7ZP" secondAttribute="bottom" constant="-40" id="ecG-8s-p7A"/>
+                            <constraint firstItem="OOS-yY-s1D" firstAttribute="top" secondItem="gxO-7Q-thw" secondAttribute="top" id="iiA-o7-r8z"/>
+                            <constraint firstItem="gxO-7Q-thw" firstAttribute="trailing" secondItem="OOS-yY-s1D" secondAttribute="trailing" id="rLb-BG-Ypy"/>
+                            <constraint firstItem="OOS-yY-s1D" firstAttribute="leading" secondItem="gxO-7Q-thw" secondAttribute="leading" id="tKz-PO-u6A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorizationButton" destination="hq0-g2-d11" id="ViO-Nz-LZL"/>
+                        <outlet property="confirmationLabel" destination="MCY-w6-URB" id="Nln-O5-y8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIa-vK-Giu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96" y="-5"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="hq0-g2-d11">
+            <size key="intrinsicContentSize" width="198" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="apple.button" width="24" height="24"/>
+        <image name="emoji.folder.grey" width="56" height="56"/>
+        <namedColor name="Background">
+            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.98900002241134644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Subtitle">
+            <color red="0.37099999189376831" green="0.40999999642372131" blue="0.50099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title">
+            <color red="0.26899999380111694" green="0.30099999904632568" blue="0.375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

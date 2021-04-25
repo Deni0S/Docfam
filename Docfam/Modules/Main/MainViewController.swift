@@ -5,21 +5,18 @@ import Swinject
 
 final class MainViewController: UITabBarController {
 
+    // MARK: - Private Properties
+    
     private let bag = DisposeBag()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    // MARK: - Lifecycle
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let coordinator = AuthorizationCoordinator(presenter: self)
-//        let identifier = UUID()
-//        var childCoordinators = [UUID: Any]()
-//        childCoordinators[identifier] = coordinator
-        coordinator.open()
-//            .do { _ in childCoordinators[identifier] = nil }
+        
+        AuthorizationCoordinator(self).coordinate()
             .subscribe()
             .disposed(by: bag)
     }
+    
 }
