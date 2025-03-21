@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SS7-Pw-QqZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Семья-->
+        <scene sceneID="ipZ-j7-Pir">
+            <objects>
+                <viewController id="4GR-Je-Hb6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbW-Gh-u0d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sq3-kv-BD4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Семья" image="family.inactive" id="GJF-uj-aaa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7I6-hW-1fF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="453"/>
+        </scene>
+        <!--Еще-->
+        <scene sceneID="g4H-SO-Chm">
+            <objects>
+                <viewController id="IZG-JW-gan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EAG-ZY-yD5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nLY-BM-WPh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Еще" image="still.inactive" id="2nC-aH-JHi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJh-xy-31n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-273"/>
+        </scene>
+        <!--Документы-->
+        <scene sceneID="nGs-2o-fpb">
+            <objects>
+                <viewController id="W9w-T0-q9s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJ4-ZS-TcS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji.folder.grey" translatesAutoresizingMaskIntoConstraints="NO" id="tdS-Dk-FbH">
+                                <rect key="frame" x="179" y="138" width="56" height="56"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавьте документы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWN-yP-K6Z">
+                                <rect key="frame" x="16" y="207" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="Title"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавляйте личные и семейные документы из фотоальбома, сканируйте с помощью камеры или импортируйте PDF файлы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJW-R9-Ko5">
+                                <rect key="frame" x="16" y="247" width="382" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="Subtitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QJ-Mq-jEz" customClass="CustomButton" customModule="Docfam" customModuleProvider="target">
+                                <rect key="frame" x="16" y="312.5" width="382" height="52"/>
+                                <color key="backgroundColor" name="Primary Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="uzg-Qo-JjA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Добавить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji.family" translatesAutoresizingMaskIntoConstraints="NO" id="ftr-aq-lR3">
+                                <rect key="frame" x="181.5" y="408.5" width="51" height="51"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пригласите семью" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUa-Ta-eQ2">
+                                <rect key="frame" x="16" y="474.5" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="Title"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пригласите семью для быстрого доступа к документам и их обмену" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkB-Bz-3Ll">
+                                <rect key="frame" x="16" y="514.5" width="382" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" name="Subtitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZY-T1-Pyn" customClass="CustomButton" customModule="Docfam" customModuleProvider="target">
+                                <rect key="frame" x="16" y="568" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="nMN-Wz-lVt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Пригласить">
+                                    <color key="titleColor" name="Primary Button"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Primary Button"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWigth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5TP-fr-zQy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ZY-T1-Pyn" firstAttribute="top" secondItem="PkB-Bz-3Ll" secondAttribute="bottom" constant="20" id="2aV-iL-agf"/>
+                            <constraint firstItem="PkB-Bz-3Ll" firstAttribute="leading" secondItem="5TP-fr-zQy" secondAttribute="leading" constant="16" id="2hx-pR-rFO"/>
+                            <constraint firstItem="jUa-Ta-eQ2" firstAttribute="top" secondItem="ftr-aq-lR3" secondAttribute="bottom" constant="15" id="3JR-jX-hRT"/>
+                            <constraint firstItem="3QJ-Mq-jEz" firstAttribute="leading" secondItem="5TP-fr-zQy" secondAttribute="leading" constant="16" id="7Ur-ow-hjg"/>
+                            <constraint firstItem="1ZY-T1-Pyn" firstAttribute="leading" secondItem="5TP-fr-zQy" secondAttribute="leading" constant="16" id="B5n-ra-5Kc"/>
+                            <constraint firstItem="tdS-Dk-FbH" firstAttribute="top" secondItem="5TP-fr-zQy" secondAttribute="top" constant="94" id="CPz-Wo-dNr"/>
+                            <constraint firstItem="PkB-Bz-3Ll" firstAttribute="top" secondItem="jUa-Ta-eQ2" secondAttribute="bottom" constant="11" id="EdX-xh-fzt"/>
+                            <constraint firstItem="3QJ-Mq-jEz" firstAttribute="top" secondItem="OJW-R9-Ko5" secondAttribute="bottom" constant="15" id="KEg-ga-ZPN"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="trailing" secondItem="jUa-Ta-eQ2" secondAttribute="trailing" constant="16" id="NTk-km-swc"/>
+                            <constraint firstItem="IWN-yP-K6Z" firstAttribute="left" secondItem="5TP-fr-zQy" secondAttribute="left" constant="16" id="Qif-SU-YvL"/>
+                            <constraint firstItem="jUa-Ta-eQ2" firstAttribute="leading" secondItem="5TP-fr-zQy" secondAttribute="leading" constant="16" id="VVU-rx-dRk"/>
+                            <constraint firstItem="IWN-yP-K6Z" firstAttribute="top" secondItem="tdS-Dk-FbH" secondAttribute="bottom" constant="13" id="WuR-8T-DaB"/>
+                            <constraint firstItem="OJW-R9-Ko5" firstAttribute="top" secondItem="IWN-yP-K6Z" secondAttribute="bottom" constant="11" id="Xmb-dy-rsC"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="right" secondItem="IWN-yP-K6Z" secondAttribute="right" constant="16" id="YYx-IM-epe"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="trailing" secondItem="PkB-Bz-3Ll" secondAttribute="trailing" constant="16" id="iHm-Za-BmL"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="trailing" secondItem="1ZY-T1-Pyn" secondAttribute="trailing" constant="16" id="lSB-ye-kgl"/>
+                            <constraint firstItem="ftr-aq-lR3" firstAttribute="centerX" secondItem="PJ4-ZS-TcS" secondAttribute="centerX" id="nlB-WL-eg9"/>
+                            <constraint firstItem="ftr-aq-lR3" firstAttribute="top" secondItem="3QJ-Mq-jEz" secondAttribute="bottom" constant="44" id="sLp-Pw-BiW"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="trailing" secondItem="3QJ-Mq-jEz" secondAttribute="trailing" constant="16" id="udF-Rf-XLr"/>
+                            <constraint firstItem="OJW-R9-Ko5" firstAttribute="leading" secondItem="5TP-fr-zQy" secondAttribute="leading" constant="16" id="uxw-VF-G9Z"/>
+                            <constraint firstItem="tdS-Dk-FbH" firstAttribute="centerX" secondItem="PJ4-ZS-TcS" secondAttribute="centerX" id="y52-Bu-EBL"/>
+                            <constraint firstItem="5TP-fr-zQy" firstAttribute="trailing" secondItem="OJW-R9-Ko5" secondAttribute="trailing" constant="16" id="zPR-Pb-Sna"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Документы" image="documents.inactive" selectedImage="documents.inactive" id="ztY-Zc-G44"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yK-KF-gDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-996"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="HTP-3o-NLj">
+            <objects>
+                <tabBarController storyboardIdentifier="MainViewController" id="SS7-Pw-QqZ" customClass="MainViewController" customModule="Docfam" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dwt-1b-iSj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W9w-T0-q9s" kind="relationship" relationship="viewControllers" id="fzH-sK-9Qb"/>
+                        <segue destination="4GR-Je-Hb6" kind="relationship" relationship="viewControllers" id="3n7-q0-FuZ"/>
+                        <segue destination="IZG-JW-gan" kind="relationship" relationship="viewControllers" id="gvQ-Oi-NNw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HE2-db-qU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="-273"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1ZY-T1-Pyn">
+            <size key="intrinsicContentSize" width="96" height="33"/>
+        </designable>
+        <designable name="3QJ-Mq-jEz">
+            <size key="intrinsicContentSize" width="79" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="documents.inactive" width="30" height="28"/>
+        <image name="emoji.family" width="51" height="51"/>
+        <image name="emoji.folder.grey" width="56" height="56"/>
+        <image name="family.inactive" width="36" height="30"/>
+        <image name="still.inactive" width="30" height="28"/>
+        <namedColor name="Primary Button">
+            <color red="0.86500000953674316" green="0.043000001460313797" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Subtitle">
+            <color red="0.37099999189376831" green="0.40999999642372131" blue="0.50099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title">
+            <color red="0.26899999380111694" green="0.30099999904632568" blue="0.375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034A18F12D8CD5B000B6420A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				772E6A772610693400D0AB5B /* AppDelegate.swift */,
+				779F5FED2621AAA400CD8217 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		1C16CFED21B825521D254863 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,34 +97,33 @@
 		772E6A762610693400D0AB5B /* Docfam */ = {
 			isa = PBXGroup;
 			children = (
+				034A18F12D8CD5B000B6420A /* App */,
 				779F5FDF2621A8B900CD8217 /* Core */,
-				779F5FB12621A6EA00CD8217 /* Modules */,
-				779F5FF02621ABCB00CD8217 /* SupportingFiles */,
+				779F5FB12621A6EA00CD8217 /* Flow */,
+				779F5FF02621ABCB00CD8217 /* Resources */,
 			);
 			path = Docfam;
 			sourceTree = "<group>";
 		};
-		779F5FB12621A6EA00CD8217 /* Modules */ = {
+		779F5FB12621A6EA00CD8217 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
 				779F5FF42621AC9600CD8217 /* Main */,
 				77E06533261E4A430017FAB7 /* Authorisation */,
 			);
-			path = Modules;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		779F5FDF2621A8B900CD8217 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				772E6A772610693400D0AB5B /* AppDelegate.swift */,
-				779F5FED2621AAA400CD8217 /* SceneDelegate.swift */,
 				779F5FE92621A98400CD8217 /* Extension.swift */,
 				77EC737D262A2D0B002E5934 /* CustomUI.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		779F5FF02621ABCB00CD8217 /* SupportingFiles */ = {
+		779F5FF02621ABCB00CD8217 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				772E6A802610693500D0AB5B /* Assets.xcassets */,
@@ -123,7 +131,7 @@
 				77E06475261A2B310017FAB7 /* Docfam.entitlements */,
 				772E6A852610693500D0AB5B /* Info.plist */,
 			);
-			path = SupportingFiles;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		779F5FF42621AC9600CD8217 /* Main */ = {
@@ -409,12 +417,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Docfam/SupportingFiles/Docfam.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Docfam/Resources/Docfam.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
-				INFOPLIST_FILE = Docfam/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Docfam/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,12 +441,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Docfam/SupportingFiles/Docfam.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Docfam/Resources/Docfam.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
-				INFOPLIST_FILE = Docfam/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Docfam/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
