@@ -38,17 +38,17 @@ public extension UIColor {
 
     // MARK: Dark mode colors
 
-    static var background: UIColor { UIColor(named: "Background")! }
-    static var disabledButton: UIColor { UIColor(named: "Disabled Button")! }
-    static var focusedInputShadow: UIColor { UIColor(named: "Focused Input Shadow")! }
-    static var focusedInput: UIColor { UIColor(named: "Focused Input")! }
-    static var link: UIColor { UIColor(named: "Link")! }
-    static var navigation: UIColor { UIColor(named: "Navigation")! }
-    static var primaryButton: UIColor { UIColor(named: "Primary Button")! }
-    static var secondaryBackground: UIColor { UIColor(named: "Secondary Background")! }
-    static var subtitle: UIColor { UIColor(named: "Subtitle")! }
-    static var textDisabledButton: UIColor { UIColor(named: "Text Disabled Button")! }
-    static var title: UIColor { UIColor(named: "Title")! }
+    static var custom_background: UIColor { UIColor(named: "Background")! }
+    static var custom_disabledButton: UIColor { UIColor(named: "Disabled Button")! }
+    static var custom_focusedInputShadow: UIColor { UIColor(named: "Focused Input Shadow")! }
+    static var custom_focusedInput: UIColor { UIColor(named: "Focused Input")! }
+    static var custom_link: UIColor { UIColor(named: "Link")! }
+    static var custom_navigation: UIColor { UIColor(named: "Navigation")! }
+    static var custom_primaryButton: UIColor { UIColor(named: "Primary Button")! }
+    static var custom_secondaryBackground: UIColor { UIColor(named: "Secondary Background")! }
+    static var custom_subtitle: UIColor { UIColor(named: "Subtitle")! }
+    static var custom_textDisabledButton: UIColor { UIColor(named: "Text Disabled Button")! }
+    static var custom_title: UIColor { UIColor(named: "Title")! }
 
 }
 

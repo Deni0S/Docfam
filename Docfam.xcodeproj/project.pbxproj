@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03EA090C307984400051E903 /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03EA0909307984400051E903 /* Logo.icns */; };
+		03EA090D307984400051E903 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 03EA090A307984400051E903 /* README.md */; };
+		03EA090E307984400051E903 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03EA0908307984400051E903 /* LICENSE */; };
+		03EA090F307984400051E903 /* README.RU.md in Resources */ = {isa = PBXBuildFile; fileRef = 03EA090B307984400051E903 /* README.RU.md */; };
 		35BCF6B3645B8CA207F7C8C2 /* Pods_Docfam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A32CE9172DA6848D4A9BF8 /* Pods_Docfam.framework */; };
 		772E6A782610693400D0AB5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772E6A772610693400D0AB5B /* AppDelegate.swift */; };
 		772E6A812610693500D0AB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772E6A802610693500D0AB5B /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03EA0908307984400051E903 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		03EA0909307984400051E903 /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = SOURCE_ROOT; };
+		03EA090A307984400051E903 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		03EA090B307984400051E903 /* README.RU.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.RU.md; sourceTree = SOURCE_ROOT; };
 		30A32CE9172DA6848D4A9BF8 /* Pods_Docfam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Docfam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C008A58EC9B2040D34534AE /* Pods-Docfam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Docfam.release.xcconfig"; path = "Target Support Files/Pods-Docfam/Pods-Docfam.release.xcconfig"; sourceTree = "<group>"; };
 		772E6A742610693400D0AB5B /* Docfam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Docfam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,10 @@
 		779F5FF02621ABCB00CD8217 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03EA0908307984400051E903 /* LICENSE */,
+				03EA0909307984400051E903 /* Logo.icns */,
+				03EA090A307984400051E903 /* README.md */,
+				03EA090B307984400051E903 /* README.RU.md */,
 				772E6A802610693500D0AB5B /* Assets.xcassets */,
 				773F67982623339200A73BEF /* LaunchScreen.storyboard */,
 				77E06475261A2B310017FAB7 /* Docfam.entitlements */,
@@ -192,8 +204,9 @@
 		772E6A6C2610693400D0AB5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					772E6A732610693400D0AB5B = {
 						CreatedOnToolsVersion = 12.4;
@@ -224,6 +237,10 @@
 			files = (
 				773F67942623336400A73BEF /* Main.storyboard in Resources */,
 				773F67992623339200A73BEF /* LaunchScreen.storyboard in Resources */,
+				03EA090C307984400051E903 /* Logo.icns in Resources */,
+				03EA090D307984400051E903 /* README.md in Resources */,
+				03EA090E307984400051E903 /* LICENSE in Resources */,
+				03EA090F307984400051E903 /* README.RU.md in Resources */,
 				779F5FC32621A74400CD8217 /* AuthorizationViewController.storyboard in Resources */,
 				772E6A812610693500D0AB5B /* Assets.xcassets in Resources */,
 			);
@@ -262,9 +279,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Docfam/Pods-Docfam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Docfam/Pods-Docfam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -329,8 +351,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SJ69ZFHT28;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -359,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -391,8 +416,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SJ69ZFHT28;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -421,13 +448,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = SJ69ZFHT28;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Docfam/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DeniOS.Docfam;
+				PRODUCT_BUNDLE_IDENTIFIER = Deni0S.Docfam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -445,13 +473,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = SJ69ZFHT28;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Docfam/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DeniOS.Docfam;
+				PRODUCT_BUNDLE_IDENTIFIER = Deni0S.Docfam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
