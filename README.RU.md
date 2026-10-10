@@ -1,20 +1,21 @@
 # DocFam / Домашние документы 
+[![Type](https://img.shields.io/badge/type-pet%20project-blueviolet)](#)
 [![Status](https://img.shields.io/badge/status-deprecated-red)](#)
-[![Purpose](https://img.shields.io/badge/purpose-educational%20%2F%20history-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Year](https://img.shields.io/badge/year-2021-lightgrey)](#)
 
 > **Проект больше не поддерживается.**
 > Оставлен как учебный для ознакомления и истории. 
 > Код может быть неполным, устаревшим или содержать учебные упрощения.
 
-**FamDoc** — приложение для хранения и систематизации домашних документов семьи. Все важные бумаги — паспорта, свидетельства, полисы, договоры, квитанции — в одном месте, с удобной структурой и быстрым поиском. Приложение создано для того, чтобы каждая семья могла держать свои документы в порядке. Вместо разрозненных папок и бумажных архивов — единое цифровое хранилище с понятной иерархией: **семья → член семьи → категория документа → сам документ**.
+Приложение для хранения и систематизации домашних документов семьи. Все важные бумаги — паспорта, свидетельства, полисы, договоры, квитанции — в одном месте, с удобной структурой и быстрым поиском. Приложение создано для того, чтобы каждая семья могла держать свои документы в порядке. Вместо разрозненных папок и бумажных архивов — единое цифровое хранилище с понятной иерархией: **семья → член семьи → категория документа → сам документ**.
 
-## Screenshots
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Screens/Screenshot_1_Dark.png">
   <source media="(prefers-color-scheme: light)" srcset="Screens/Screenshot_1_Light.png">
   <img alt="Автоизация" src="Screens/Screenshot_1_Dark.png" width="250">
 </picture>
+&nbsp;&nbsp;&nbsp;
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Screens/Screenshot_2_Dark.png">
   <source media="(prefers-color-scheme: light)" srcset="Screens/Screenshot_2_Light.png">
@@ -34,11 +35,9 @@
 ## Технологии
 | Технология | Назначение |
 |------------|-----------|
-| **SwiftUI** | Декларативный интерфейс, единая кодовая база для iOS и macOS |
 | **Apple Sign-In** | Аутентификация пользователя без пароля |
-| **Swift** | Основной язык разработки |
-| **Combine** | Реактивная обработка данных |
-| **CloudKit** | Синхронизация документов между устройствами |
+| **Swinject** | Dependency Injection (DI) |
+| **MVVM** | Архитектурный паттерн: Model — View — ViewModel |
 
 ### Почему Apple Sign-In
 - 🔒 **Безопасность** — Apple не передаёт личные данные приложению

@@ -1,20 +1,21 @@
-# DocFam / Home Documents **[🇷🇺 Rus](./README.RU.md)**
+# DocFam / Home Documents
+[![Type](https://img.shields.io/badge/type-pet%20project-blueviolet)](#)
 [![Status](https://img.shields.io/badge/status-deprecated-red)](#)
-[![Purpose](https://img.shields.io/badge/purpose-educational%20%2F%20history-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Year](https://img.shields.io/badge/year-2021-lightgrey)](#)
 
 > **This project is no longer maintained.**
 > It is kept as an educational subproject for reference and historical purposes. 
 > The code may be incomplete, outdated, or contain educational simplifications.
 
-**FamDoc** — an application for storing and organizing a family's home documents. All important papers — passports, certificates, policies, contracts, receipts — in one place, with a convenient structure and quick search. The app is designed so that every family can keep their documents in order. Instead of scattered folders and paper archives — a single digital storage with a clear hierarchy: **family → family member → document category → the document itself**.
+An application for storing and organizing a family's home documents. All important papers — passports, certificates, policies, contracts, receipts — in one place, with a convenient structure and quick search. The app is designed so that every family can keep their documents in order. Instead of scattered folders and paper archives — a single digital storage with a clear hierarchy: **family → family member → document category → the document itself**.
 
-## Screenshots
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Screens/Screenshot_1_Dark.png">
   <source media="(prefers-color-scheme: light)" srcset="Screens/Screenshot_1_Light.png">
   <img alt="Authorization" src="Screens/Screenshot_1_Dark.png" width="250">
 </picture>
+&nbsp;&nbsp;&nbsp;
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Screens/Screenshot_2_Dark.png">
   <source media="(prefers-color-scheme: light)" srcset="Screens/Screenshot_2_Light.png">
@@ -34,11 +35,9 @@
 ## Technologies
 | Technology | Purpose |
 |------------|---------|
-| **SwiftUI** | Declarative interface, single codebase for iOS and macOS |
 | **Apple Sign-In** | Passwordless user authentication |
-| **Swift** | Primary development language |
-| **Combine** | Reactive data processing |
-| **CloudKit** | Document synchronization between devices |
+| **Swinject** | Внедрение зависимостей (DI) |
+| **MVVM** | Architectural pattern: Model - View - ViewModel |
 
 ### Why Apple Sign-In
 - 🔒 **Security** — Apple does not share personal data with the app
